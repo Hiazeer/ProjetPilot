@@ -1,0 +1,31 @@
+PROJET PILOT 1.0 — plugin de conduite de projet pour Notepad++ (64 bits)
+=========================================================================
+
+INSTALLATION
+1. Fermez Notepad++.
+2. Copiez le dossier "ProjetPilot" (celui qui contient ProjetPilot.dll) dans :
+      C:\Program Files\Notepad++\plugins\
+   Résultat attendu :
+      C:\Program Files\Notepad++\plugins\ProjetPilot\ProjetPilot.dll
+   (Windows demandera les droits administrateur.)
+3. Relancez Notepad++ : menu Modules > Projet Pilot.
+
+PREMIERS PAS
+- Ouvrez exemple.projet, puis Modules > Projet Pilot > Tableau de bord.
+- Ou : Modules > Projet Pilot > Nouveau projet (modèle).
+
+RACCOURCIS (Ctrl+Alt+Maj + lettre, modifiables dans Paramètres > Raccourcis clavier)
+  D  Tableau de bord        G  Diagramme de Gantt
+  T  Insérer une tâche      J  Insérer un jalon
+  L  Entrée de journal      S  Changer le statut
+
+FORMAT (une ligne = un élément)
+  PROJET: Nom    CHEF: Nom    DEBUT: 2026-11-02    FIN: 2026-12-31
+  [ ] T1 Titre | resp:Alice | debut:2026-11-02 | fin:2026-11-10 | prio:haute | av:40 | dep:T0 | note:...
+      [ ] à faire   [~] en cours   [x] fait   [!] bloqué
+  { } J1 Livraison | 2026-12-01          {x} = jalon atteint
+  2026-10-29 14:30 | Entrée de journal
+  DECISION 2026-10-29 | Texte de la décision
+  RISQUE R1 haute | Description | action:parade      (niveau "clos" = risque fermé)
+  == SECTION ==   titres facultatifs        // commentaire
+  Dates : AAAA-MM-JJ ou JJ/MM/AAAA

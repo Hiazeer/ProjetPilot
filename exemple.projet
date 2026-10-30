@@ -1,0 +1,38 @@
+PROJET: Refonte du site web
+CHEF: Camille
+DEBUT: 2026-10-12
+FIN: 2026-12-18
+
+// Tâches : [ ] à faire   [~] en cours   [x] fait   [!] bloqué
+// Champs : resp:  debut:  fin:  prio:  av:(%)  dep:(ID d'une autre tâche)  note:
+// Jalons : { } à venir   {x} atteint
+
+== TÂCHES ==
+[x] T1 Cadrage et cahier des charges | resp:Camille | debut:2026-10-12 | fin:2026-10-16 | prio:haute
+[x] T2 Choix de l'hébergeur | resp:Camille | debut:2026-10-14 | fin:2026-10-19
+[~] T3 Maquettes graphiques | resp:Alice | debut:2026-10-19 | fin:2026-10-27 | av:70 | prio:haute
+[~] T4 Intégration WordPress | resp:Bob | dep:T3 | fin:2026-11-20 | av:15
+[!] T5 Rédaction des contenus | resp:Client | debut:2026-10-20 | fin:2026-11-06 | note:en attente des textes
+[ ] T6 Référencement (SEO) | resp:Alice | dep:T4 | fin:2026-12-04
+[ ] T7 Recette et corrections | resp:Bob | dep:T6 | fin:2026-12-14
+[ ] T8 Formation du client | resp:Camille | 2026-12-15 | 2026-12-16
+
+== JALONS ==
+{x} J1 Lancement | 2026-10-12
+{ } J2 Validation des maquettes | 2026-10-28
+{ } J3 Site en préproduction | 2026-11-23
+{ } J4 Mise en ligne | 2026-12-18
+
+== JOURNAL ==
+2026-10-12 09:30 | Réunion de lancement avec le client
+2026-10-19 14:00 | Point hebdo : maquettes démarrées, hébergeur choisi
+2026-10-26 14:00 | Point hebdo : textes toujours pas reçus, relance faite
+
+== DÉCISIONS ==
+DECISION 2026-10-14 | On part sur WordPress + thème sur mesure
+DECISION 2026-10-19 | Hébergement chez o2switch
+
+== RISQUES ==
+RISQUE R1 haute | Retard de livraison des contenus par le client | action:relance hebdo + textes provisoires
+RISQUE R2 moyen | Dépassement du budget intégration | action:suivi des heures chaque vendredi
+RISQUE R3 clos | Indisponibilité d'Alice en octobre

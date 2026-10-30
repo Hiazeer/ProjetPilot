@@ -1,0 +1,7 @@
+build/
+dist/
+*.zip
+*.o
+*.obj
+*.exe
+SYNTHESE.md
